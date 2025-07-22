@@ -67,4 +67,9 @@ input{
 .listButton{
     padding:10px;
     text-align: center;
+    width: 100%;
+    &:hover{
+        background-color: var(--hoverColour);
+        box-shadow: 2px 2px 10px var(--fontColour);
+    }
 }

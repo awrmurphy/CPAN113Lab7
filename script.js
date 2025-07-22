@@ -91,26 +91,54 @@ element.addEventListener("blur", function(){
     console.log("Focus has left Login Form");
 });
 });
-const buttonList = document.querySelectorAll("button.listButton");
-console.log(buttonList);
-
-buttonList.forEach(element =>{
-    if(element.className === "listButton"){
-    element.addEventListener("mouseenter",function(){
-    this.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue('--hoverColour');
-    this.style.boxShadow = "2px 2px 10px "+getComputedStyle(document.documentElement,null).getPropertyValue('--fontColour');
-    console.log("Mouse is hovering a button");
-});
-    element.addEventListener("mouseleave",function(){
-    this.style.backgroundColor =  getComputedStyle(document.documentElement,null).getPropertyValue('--backgroundColour');
-    this.style.boxShadow = "";
-    console.log("Mouse left");
-});
+// const buttonList = document.querySelectorAll("button.listButton");
+// buttonList.forEach(element =>{
+//     if(element.className === "listButton"){
+//     element.addEventListener("mouseenter",function(){
+//     this.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue('--hoverColour');
+//     this.style.boxShadow = "2px 2px 10px "+getComputedStyle(document.documentElement,null).getPropertyValue('--fontColour');
+//     console.log("Mouse is hovering a button");
+// });
+//     element.addEventListener("mouseleave",function(){
+//     this.style.backgroundColor =  getComputedStyle(document.documentElement,null).getPropertyValue('--backgroundColour');
+//     this.style.boxShadow = "";
+//     console.log("Mouse left");
+// });
     
-    element.addEventListener("click",function(event){
+//     element.addEventListener("click",function(event){
         
+//     if(event.target.tagName === "BUTTON"){
+//         switch(this.id){
+//             case "button1":
+//                 document.getElementById("buttonMessage").innerHTML ="Not this one!";
+//                 break;
+//             case "button2":
+//                 document.getElementById("buttonMessage").innerHTML ="Try Again!";
+//                 break;
+//             case "button3":
+//                 document.getElementById("buttonMessage").innerHTML ="Getting Close!";
+//                 break;
+//             case "button4":
+//                 document.getElementById("buttonMessage").innerHTML ="You are a winrar!";
+//                 break;
+//             case "button5":
+//                 document.getElementById("buttonMessage").innerHTML ="Too far go back!";
+//                 break;
+//             case "button6":
+//                 document.getElementById("buttonMessage").innerHTML ="How'd you get all the way down here?";
+//                 break;
+            
+//         }
+//     }
+// });
+//     }
+// });
+const buttonList = document.getElementById("buttonList");
+
+buttonList.addEventListener("click",function(event){
+    
     if(event.target.tagName === "BUTTON"){
-        switch(this.id){
+        switch(event.target.id){
             case "button1":
                 document.getElementById("buttonMessage").innerHTML ="Not this one!";
                 break;
@@ -131,7 +159,5 @@ buttonList.forEach(element =>{
                 break;
             
         }
-    }
-});
     }
 });
