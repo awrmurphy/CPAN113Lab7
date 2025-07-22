@@ -22,7 +22,7 @@ body {
 }
 
 .gradientBox{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     width: 97%;
     margin: auto;
@@ -57,4 +57,14 @@ input{
     padding: 3px;
     max-width: 200px;
     color: var(--fontColour);
+}
+.manyButtons.content{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap:5px ;
+    width: max-content;
+}
+.listButton{
+    padding:10px;
+    text-align: center;
 }

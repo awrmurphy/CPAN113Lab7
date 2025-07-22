@@ -10,7 +10,7 @@
 <body>
     <section name="buttonHome" id="buttonHome">
         <div class="gradientBox"><div class="content">
-        <label for="testButton">Click the button!</label><br>
+        <label for="testButton" id="testButtonMessage">Click the button!</label><br>
         <button name="testButton" id="testButton">Click Me!</button>
         </div></div>
     </section>
@@ -25,12 +25,39 @@
         <label for="form1">A Form</label>
         <form action="#" name="form1" id="form1">
             <label for="user">Username:</label><br>
-            <input type="text" name="user" id="user" placeholder="username"><br>
+            <input type="text" class="login" name="user" id="user" placeholder="username"><br>
             <label for="pass">Password:</label><br>
-            <input type="password" name="pass" id="pass" placeholder="password"><br>
-            <button type="submit">Log in</button><button type="reset">Clear Form</button>
+            <input type="password" class="login" name="pass" id="pass" placeholder="password"><br>
+            <button type="submit" id="submitButton">Log in</button><button type="reset" id="resetButton">Clear Form</button>
         </form>
         </div></div>
     </section>
+    <section name="manyButtons" id="manyButtons">
+        <label id="buttonMessage">Some Buttons!</label><br>
+        <div class="gradientBox"><div class="content">
+            
+            <div>
+                <button class="listButton" tag="listButton" id="button1">Click Me!</button>
+            </div>
+            <div>
+                <button class="listButton" id="button2">Click Me!</button>
+            </div>
+            <div>
+                <button class="listButton" id="button3">Click Me!</button>
+            </div>
+            <div>
+                <button class="listButton" id="button4">Click Me!</button>
+            </div>
+            <div>
+                <button class="listButton" id="button5">Click Me!</button>
+            </div>
+            <div>
+                <button class="listButton" id="button6">Click Me!</button>
+            </div>
+        
+        </div></div>
+
+    </section>
 </body>
+
 </html>
