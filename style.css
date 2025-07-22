@@ -1,0 +1,33 @@
+:root{
+--backgroundColour:#444141 ;
+--fontColour:#f7f6c5;
+background-color: var(--backgroundColour);
+color: var(--fontColour);
+font-size: 48px;
+}
+label{
+    text-shadow:3px 3px 5px black;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.gradientBox{
+    display: flex;
+    align-items: center;
+    width: 97%;
+    margin: auto;
+    position:relative;
+    background:linear-gradient(to bottom,#fc4d47,#74df4a,#3487f5,#bd0af3) 0 100%;
+    padding: 5px;
+}
+
+.content{
+    background: var(--backgroundColour);
+    color: var(--fontColour);
+    padding: 2px;
+}
