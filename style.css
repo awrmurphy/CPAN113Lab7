@@ -6,6 +6,10 @@ background-color: var(--backgroundColour);
 color: var(--fontColour);
 font-size: 48px;
 }
+::placeholder{
+    color:#b3b1b1;
+    opacity: 1;
+}
 label{
     text-shadow:3px 3px 5px black;
 }
@@ -45,4 +49,12 @@ button{
     height: 40%;
     font-size: .5em;
     font-family: inherit;
+}
+input{
+    background-color: var(--hoverColour);
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    max-width: 200px;
+    color: var(--fontColour);
 }
